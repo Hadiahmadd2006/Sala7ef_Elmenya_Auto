@@ -3,6 +3,12 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.XR.ARFoundation;
 using UnityEngine.XR.ARSubsystems;
+
+public static class SessionData
+{
+    public static int SelectedVehicleIndex = 0;
+}
+
 [RequireComponent(typeof(ARRaycastManager))]
 public class PlacementController : MonoBehaviour
 {
@@ -29,7 +35,6 @@ public class PlacementController : MonoBehaviour
             else
                 placedVehicle.transform.SetPositionAndRotation(hitPose.position,
                 hitPose.rotation);
-            // Once placed, hide the plane visuals so the AR view feels clean
             foreach (var p in planeManager.trackables) p.gameObject.SetActive(false);
             planeManager.enabled = false;
         }
