@@ -107,4 +107,5 @@ InitTestScene*.unity*
 /ProjectSettings
 /Packages
 .DS_Store
+/Assets/Cars/__MACOSX
 /Assets/XRI
