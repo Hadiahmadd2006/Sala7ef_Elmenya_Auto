@@ -16,4 +16,14 @@ MonoBehaviour:
   m_GuidHigh: 10710910175532046254
   m_DataStore:
     m_Storage: []
-  m_Images: []
+  m_Images:
+  - m_SerializedGuid:
+      m_GuidLow: 5722340344565744590
+      m_GuidHigh: 7392869041500979609
+    m_SerializedTextureGuid:
+      m_GuidLow: 10692533234853430195
+      m_GuidHigh: 2469052573633723882
+    m_Size: {x: 0, y: 0}
+    m_SpecifySize: 0
+    m_Name: mclaren-brand-symbol-logo-orange-design-british-car-automobile-illustration-free-vector
+    m_Texture: {fileID: 0}
