@@ -2588,6 +2588,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2786620886917386126}
+  - component: {fileID: 5538302821851039943}
   m_Layer: 0
   m_Name: L_Door
   m_TagString: Untagged
@@ -2611,6 +2612,28 @@ Transform:
   - {fileID: 1052782880168958801}
   m_Father: {fileID: 5275380555329674117}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &5538302821851039943
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2246082855805834584}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a952f0bf76ae842e6927a9874f6df4e2, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &2317990355349062911
 GameObject:
   m_ObjectHideFlags: 0
@@ -10854,6 +10877,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 559418433140778711}
+  - component: {fileID: 7433124730596966762}
   m_Layer: 0
   m_Name: R_Door
   m_TagString: Untagged
@@ -10876,4 +10900,26 @@ Transform:
   m_Children:
   - {fileID: 1918709335423737252}
   m_Father: {fileID: 5275380555329674117}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -89.892, y: 0, z: 89.887}
+--- !u!95 &7433124730596966762
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9145986917631111729}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 9febb1eccbede4f14be9a6bba2459faa, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
