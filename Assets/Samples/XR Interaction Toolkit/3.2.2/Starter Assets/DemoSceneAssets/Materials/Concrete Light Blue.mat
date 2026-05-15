@@ -16,6 +16,12 @@ Material:
   - _NORMALMAP
   m_InvalidKeywords:
   - _METALLICSPECGLOSSMAP
+  m_Shader: {fileID: 4800000, guid: 933532a4fcc9baf4fa0491de14d08ed7, type: 3}
+  m_ValidKeywords:
+  - _METALLICSPECGLOSSMAP
+  - _NORMALMAP
+  m_InvalidKeywords:
+  - _METALLICGLOSSMAP
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 1
   m_DoubleSidedGI: 0
@@ -23,6 +29,9 @@ Material:
   stringTagMap: {}
   disabledShaderPasses: []
   m_LockedProperties: 
+  stringTagMap:
+    RenderType: Opaque
+  disabledShaderPasses: []
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
