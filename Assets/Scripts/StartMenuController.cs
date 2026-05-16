@@ -3,12 +3,12 @@ using UnityEngine.SceneManagement;
 
 public class StartMenuController : MonoBehaviour
 {
-    public void LoadMarkerlessScene()
+    public void LoadMarkerless()
     {
         SceneManager.LoadScene("Marker-Less");
     }
 
-    public void LoadMarkerBasedScene()
+    public void LoadMarkerBased()
     {
         SceneManager.LoadScene("Marker-Based");
     }
