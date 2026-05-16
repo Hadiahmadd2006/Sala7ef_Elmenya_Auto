@@ -617,6 +617,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -4624536937933374016, guid: 7c91b8bb3da9b84468db29ae11172e50, type: 3}
+      propertyPath: 'wheels.Array.data[0]'
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 5042463496830820932, guid: 7c91b8bb3da9b84468db29ae11172e50, type: 3}
       propertyPath: m_Name
       value: 'Mclaren W1 '
