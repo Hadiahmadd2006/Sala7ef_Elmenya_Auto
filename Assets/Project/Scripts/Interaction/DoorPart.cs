@@ -12,6 +12,5 @@ public class DoorPart : MonoBehaviour, IInteractablePart
         animator.SetBool(IsOpenHash, !current);
     }
 
-    // Called by world-space buttons too
     public void Toggle() => OnTap();
 }
