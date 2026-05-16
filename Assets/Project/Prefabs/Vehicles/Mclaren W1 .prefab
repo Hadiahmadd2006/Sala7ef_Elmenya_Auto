@@ -5048,6 +5048,7 @@ GameObject:
   - component: {fileID: 7828863171033190849}
   - component: {fileID: 4225635507066848294}
   - component: {fileID: 7581975614939365019}
+  - component: {fileID: -4624536937933374016}
   m_Layer: 0
   m_Name: 'Mclaren W1 '
   m_TagString: Untagged
@@ -5127,6 +5128,36 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Turntable
   gestures: {fileID: 0}
   speedSlider: {fileID: 0}
+--- !u!114 &-4624536937933374016
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5042463496830820932}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8975cd6ab2cb49e8aec15e7317d9f13, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::VehicleController
+  bodyParent: {fileID: 5042463496830820932}
+  bodyMaterials:
+  - {fileID: 2100000, guid: 4eb96160d65514b1f8a3a689675bfe93, type: 2}
+  - {fileID: 2100000, guid: dd587a515a89b42eb893eb2a5f60cde6, type: 2}
+  - {fileID: 2100000, guid: e08794e2e171e4163b49a1e9d1759ef6, type: 2}
+  wheelsParent: {fileID: 5042463496830820932}
+  wheelMaterials:
+  - {fileID: 2100000, guid: 61433c8b5920345588d6620a09d0237e, type: 2}
+  - {fileID: 2100000, guid: af87643acc6d6485d89375cafe5ef993, type: 2}
+  - {fileID: 2100000, guid: 576eb2cd1634f44d9980bc7f850a5fb5, type: 2}
+  wheels:
+  - {fileID: 4225635507066848294}
+  engineSource: {fileID: 665926091420717590, guid: 3abef48e34421443ea29176062329992, type: 3}
+  voiceoverSource: {fileID: 2654342396848947911, guid: 52f9f1e6e2d3b459b95daca90a36ae84, type: 3}
+  engineStartClip: {fileID: 8300000, guid: 2d210a957096d4f1da724fae411f24d1, type: 3}
+  doors:
+  - {fileID: 5042463496830820932}
+  - {fileID: 5042463496830820932}
 --- !u!1 &5056868908494722190
 GameObject:
   m_ObjectHideFlags: 0
