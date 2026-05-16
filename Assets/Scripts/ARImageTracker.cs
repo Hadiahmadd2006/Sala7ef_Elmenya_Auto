@@ -63,30 +63,25 @@ public class ARImageTracker : MonoBehaviour
         }
     }
 
-    private void HandleImageUpdated(ARTrackedImage trackedImage)
+private void HandleImageUpdated(ARTrackedImage trackedImage)
+{
+    if (trackedImage.transform.childCount == 0) return;
+
+    GameObject content = trackedImage.transform.GetChild(0).gameObject;
+
+    switch (trackedImage.trackingState)
     {
-        if (trackedImage.transform.childCount == 0) return;
-
-        GameObject content = trackedImage.transform.GetChild(0).gameObject;
-        Renderer rend = content.GetComponentInChildren<Renderer>();
-
-        switch (trackedImage.trackingState)
-        {
-            case TrackingState.Tracking:
-                content.SetActive(true);
-                SetColor(rend, Color.green);
-                break;
-
-            case TrackingState.Limited:
-                content.SetActive(true);
-                SetColor(rend, Color.yellow);
-                break;
-
-            case TrackingState.None:
-                content.SetActive(false);
-                break;
-        }
+        case TrackingState.Tracking:
+            content.SetActive(true);
+            break;
+        case TrackingState.Limited:
+            content.SetActive(true);
+            break;
+        case TrackingState.None:
+            content.SetActive(false);
+            break;
     }
+}
 
     private void HandleImageRemoved(ARTrackedImage trackedImage)
     {

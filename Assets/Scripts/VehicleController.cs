@@ -11,7 +11,6 @@ public class VehicleController : MonoBehaviour
     [Header("Wheels - assign the Wheels PARENT GameObject")]
     [SerializeField] private GameObject wheelsParent;
     [SerializeField] private Material[] wheelMaterials;
-    [SerializeField] private WheelSpinner[] wheels;
     private Renderer[] wheelRenderers;
     private int currentWheelIndex;
 
@@ -27,7 +26,7 @@ public class VehicleController : MonoBehaviour
 
     void Awake()
     {
-        // Body: read parent, grab all child renderers (any renderer type)
+        // Body: read parent, grab all child renderers
         bodyRenderers = (bodyParent != null)
             ? bodyParent.GetComponentsInChildren<Renderer>(true)
             : new Renderer[0];
@@ -36,10 +35,6 @@ public class VehicleController : MonoBehaviour
         wheelRenderers = (wheelsParent != null)
             ? wheelsParent.GetComponentsInChildren<Renderer>(true)
             : new Renderer[0];
-
-        // Auto-find WheelSpinners under wheels parent if array left empty
-        if ((wheels == null || wheels.Length == 0) && wheelsParent != null)
-            wheels = wheelsParent.GetComponentsInChildren<WheelSpinner>(true);
 
         // Doors: read each door GameObject, grab its DoorPart component
         if (doors != null)
@@ -86,7 +81,7 @@ public class VehicleController : MonoBehaviour
             if (r != null) r.material = wheelMaterials[currentWheelIndex];
     }
 
-    // ---------- ENGINE (startup sound only, no loop) ----------
+    // ---------- ENGINE (startup sound only) ----------
     public void ToggleEngine()
     {
         engineOn = !engineOn;
@@ -99,9 +94,6 @@ public class VehicleController : MonoBehaviour
         {
             if (engineSource != null) engineSource.Stop();
         }
-        if (wheels != null)
-            foreach (var w in wheels)
-                if (w != null) w.Spinning = engineOn;
     }
 
     // ---------- VOICEOVER ----------
