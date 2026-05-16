@@ -2523,6 +2523,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4976157509537944304}
+  - component: {fileID: 2692149852810172575}
   m_Layer: 0
   m_Name: RR
   m_TagString: Untagged
@@ -2546,6 +2547,19 @@ Transform:
   - {fileID: 3243492836332180878}
   m_Father: {fileID: 6591297492384048532}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2692149852810172575
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2147815579817994232}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4c51bc7e6fe4214787a67cb981a692c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WheelSpinner
+  speedDegPerSec: 360
 --- !u!1 &2186755151852696065
 GameObject:
   m_ObjectHideFlags: 0
@@ -4254,6 +4268,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1981947349386374137}
+  - component: {fileID: 429033689362764082}
   m_Layer: 0
   m_Name: FR
   m_TagString: Untagged
@@ -4277,6 +4292,19 @@ Transform:
   - {fileID: 1967997216177338361}
   m_Father: {fileID: 6591297492384048532}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &429033689362764082
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4027125453835361092}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4c51bc7e6fe4214787a67cb981a692c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WheelSpinner
+  speedDegPerSec: 360
 --- !u!1 &4069350536991334692
 GameObject:
   m_ObjectHideFlags: 0
@@ -5018,6 +5046,8 @@ GameObject:
   m_Component:
   - component: {fileID: 7491096195963026391}
   - component: {fileID: 7828863171033190849}
+  - component: {fileID: 4225635507066848294}
+  - component: {fileID: 7581975614939365019}
   m_Layer: 0
   m_Name: 'Mclaren W1 '
   m_TagString: Untagged
@@ -5070,6 +5100,33 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 21.4, y: 26.7, z: 53.1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &4225635507066848294
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5042463496830820932}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4c51bc7e6fe4214787a67cb981a692c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WheelSpinner
+  speedDegPerSec: 360
+--- !u!114 &7581975614939365019
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5042463496830820932}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77cd2e324c627244088996e59616cb17, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Turntable
+  gestures: {fileID: 0}
+  speedSlider: {fileID: 0}
 --- !u!1 &5056868908494722190
 GameObject:
   m_ObjectHideFlags: 0
@@ -6292,6 +6349,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3651190738099020039}
+  - component: {fileID: 1310380389450285352}
   m_Layer: 0
   m_Name: RL
   m_TagString: Untagged
@@ -6315,6 +6373,19 @@ Transform:
   - {fileID: 1509879399929364048}
   m_Father: {fileID: 6591297492384048532}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1310380389450285352
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5582265288191711101}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4c51bc7e6fe4214787a67cb981a692c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WheelSpinner
+  speedDegPerSec: 360
 --- !u!1 &5661028057298861021
 GameObject:
   m_ObjectHideFlags: 0
@@ -9186,6 +9257,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3508558596491473203}
+  - component: {fileID: 2307851514632334829}
   m_Layer: 0
   m_Name: FL
   m_TagString: Untagged
@@ -9209,6 +9281,19 @@ Transform:
   - {fileID: 1182817132922393405}
   m_Father: {fileID: 6591297492384048532}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2307851514632334829
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7958761342975196419}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4c51bc7e6fe4214787a67cb981a692c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WheelSpinner
+  speedDegPerSec: 360
 --- !u!1 &8027405250551174769
 GameObject:
   m_ObjectHideFlags: 0
