@@ -176,10 +176,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2050659972}
     - target: {fileID: 7027700216025616306, guid: f7d4fa869590a4b50b44f0a93c691cd7, type: 3}
-      propertyPath: m_Image
-      value: 
-      objectReference: {fileID: 2800000, guid: 5c7f43b382539463eabd33ef3bd64322, type: 3}
-    - target: {fileID: 7027700216025616306, guid: f7d4fa869590a4b50b44f0a93c691cd7, type: 3}
       propertyPath: m_QuadMesh
       value: 
       objectReference: {fileID: 2050659972}
@@ -620,18 +616,6 @@ PrefabInstance:
     - target: {fileID: 4991017510241830741, guid: 685302cb3ae80423295930d12a5697e6, type: 3}
       propertyPath: m_Name
       value: Mclaren FINAL
-      objectReference: {fileID: 0}
-    - target: {fileID: 5622875354596662767, guid: 685302cb3ae80423295930d12a5697e6, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 5622875354596662767, guid: 685302cb3ae80423295930d12a5697e6, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 5622875354596662767, guid: 685302cb3ae80423295930d12a5697e6, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 5622875354596662767, guid: 685302cb3ae80423295930d12a5697e6, type: 3}
       propertyPath: m_LocalPosition.x
