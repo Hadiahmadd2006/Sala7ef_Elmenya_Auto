@@ -10202,6 +10202,7 @@ GameObject:
   - component: {fileID: 6029039511876894733}
   - component: {fileID: -2691790728136073794}
   - component: {fileID: -6090619822240717528}
+  - component: {fileID: 3311517887066672095}
   m_Layer: 0
   m_Name: carMclaren
   m_TagString: Untagged
@@ -10480,6 +10481,27 @@ MonoBehaviour:
   m_Elasticity: 0.15
   m_EnableElasticBreakLimit: 0
   m_ElasticBreakLimit: 0.5
+--- !u!65 &3311517887066672095
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8038437248443762276}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.3084881, y: 1.0268251, z: 2.4351492}
+  m_Center: {x: 0.0022295713, y: 0.4739135, z: 0.86959034}
 --- !u!1 &8070451040809649475
 GameObject:
   m_ObjectHideFlags: 0
