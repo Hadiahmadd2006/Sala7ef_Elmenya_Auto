@@ -3385,7 +3385,6 @@ GameObject:
   - component: {fileID: 1739301763}
   - component: {fileID: 1739301762}
   - component: {fileID: 1739301761}
-  - component: {fileID: 1739301765}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -3479,32 +3478,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!114 &1739301765
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1739301760}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 922c83d673b5f474385c0e743d76764b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ColorDropdown
-  cars:
-  - carName: Mclaren W1
-    targetRenderer: {fileID: 0}
-    defaultMaterial: {fileID: 2100000, guid: 7e66535daa8e543cdad52dd3916f69b6, type: 2}
-  - carName: BMW M4
-    targetRenderer: {fileID: 0}
-    defaultMaterial: {fileID: 0}
-  activeCarIndex: 0
-  colorDropdown: {fileID: 1224914892}
-  colorOptions:
-  - label: Red
-    hex: ff0000
-  - label: Black
-    hex: 000000
 --- !u!1 &1749128541
 GameObject:
   m_ObjectHideFlags: 0
