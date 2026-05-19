@@ -4,9 +4,9 @@ public class Billboard : MonoBehaviour
 {
     void LateUpdate()
     {
-        if (Camera.main != null)
-        {
-            transform.forward = Camera.main.transform.forward;
-        }
+        Camera cam = Camera.main;
+        if (cam == null) return;
+        transform.LookAt(cam.transform);
+        transform.Rotate(0f, 180f, 0f);
     }
 }
