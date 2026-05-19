@@ -322,8 +322,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CarColorManager
   bodyRenderers:
-  - {fileID: 0}
-  wheelRenderers: []
+  - {fileID: 2131580015205531617}
+  wheelRenderers:
+  - {fileID: 5024731863523409229}
+  - {fileID: 5783094847551050860}
+  - {fileID: 2801999622877764192}
+  - {fileID: 6345009860358530232}
 --- !u!114 &1082167969929990715
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -401,6 +405,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -4563270240530722692, guid: 7a80542d5abad40b99be025260f3dc0f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.3826834
+      objectReference: {fileID: 0}
+    - target: {fileID: -4563270240530722692, guid: 7a80542d5abad40b99be025260f3dc0f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -2.8285646e-17
+      objectReference: {fileID: 0}
+    - target: {fileID: -4563270240530722692, guid: 7a80542d5abad40b99be025260f3dc0f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.9238796
+      objectReference: {fileID: 0}
+    - target: {fileID: -4563270240530722692, guid: 7a80542d5abad40b99be025260f3dc0f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -1.1716294e-17
+      objectReference: {fileID: 0}
+    - target: {fileID: -4563270240530722692, guid: 7a80542d5abad40b99be025260f3dc0f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -135
+      objectReference: {fileID: 0}
+    - target: {fileID: -1459797265988883812, guid: 7a80542d5abad40b99be025260f3dc0f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -90
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 7a80542d5abad40b99be025260f3dc0f, type: 3}
       propertyPath: m_Name
       value: BMW M4 2021 v1
@@ -411,15 +439,95 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4167280743394806330, guid: 7a80542d5abad40b99be025260f3dc0f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 3621272743180938001}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: -7966810418863155762, guid: 7a80542d5abad40b99be025260f3dc0f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3292553145227762462}
+    - targetCorrespondingSourceObject: {fileID: 3053201566782786088, guid: 7a80542d5abad40b99be025260f3dc0f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4209030214569712565}
   m_SourcePrefab: {fileID: 100100000, guid: 7a80542d5abad40b99be025260f3dc0f, type: 3}
 --- !u!4 &897204818113236489 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4167280743394806330, guid: 7a80542d5abad40b99be025260f3dc0f, type: 3}
   m_PrefabInstance: {fileID: 3865958502857376819}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2304016047985266203 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3053201566782786088, guid: 7a80542d5abad40b99be025260f3dc0f, type: 3}
+  m_PrefabInstance: {fileID: 3865958502857376819}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &4209030214569712565
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2304016047985266203}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 856ac2580e28147c481cb95687ccc619, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!1 &2654468342562214397 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -7966810418863155762, guid: 7a80542d5abad40b99be025260f3dc0f, type: 3}
+  m_PrefabInstance: {fileID: 3865958502857376819}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &3292553145227762462
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2654468342562214397}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4229382a92be8486cba1d7353d783096, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!23 &2801999622877764192 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -7835112123333124525, guid: 7a80542d5abad40b99be025260f3dc0f, type: 3}
+  m_PrefabInstance: {fileID: 3865958502857376819}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &3615297293920134104 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 7a80542d5abad40b99be025260f3dc0f, type: 3}
+  m_PrefabInstance: {fileID: 3865958502857376819}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &5024731863523409229 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -1144534672713107074, guid: 7a80542d5abad40b99be025260f3dc0f, type: 3}
+  m_PrefabInstance: {fileID: 3865958502857376819}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &5783094847551050860 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -1880522391648792481, guid: 7a80542d5abad40b99be025260f3dc0f, type: 3}
+  m_PrefabInstance: {fileID: 3865958502857376819}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &6345009860358530232 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -1321626036371038069, guid: 7a80542d5abad40b99be025260f3dc0f, type: 3}
   m_PrefabInstance: {fileID: 3865958502857376819}
   m_PrefabAsset: {fileID: 0}
