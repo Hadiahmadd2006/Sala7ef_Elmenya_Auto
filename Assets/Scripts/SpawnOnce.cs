@@ -2,12 +2,11 @@ using UnityEngine;
 
 public class SpawnOnce : MonoBehaviour
 {
-    [SerializeField] private Behaviour spawnTrigger;   // drag AR Interactor Spawn Trigger
-    [SerializeField] private Behaviour objectSpawner;  // drag Object Spawner
+    [SerializeField] private Behaviour spawnTrigger;   
+    [SerializeField] private Behaviour objectSpawner;  
 
     private bool used;
 
-    // Hook this to the "Object Spawn Triggered" event in Inspector
     public void OnSpawned()
     {
         if (used) return;
