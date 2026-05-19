@@ -16,8 +16,9 @@ public class CarAudio : MonoBehaviour
     {
         if (engineSource == null || engineStartClip == null) return;
 
-        if (!engineSource.gameObject.activeInHierarchy)
-            engineSource.gameObject.SetActive(true);
+        // THE FIX: If the car is hidden/disabled, do nothing!
+        if (!gameObject.activeInHierarchy || !engineSource.gameObject.activeInHierarchy) return;
+
         engineSource.enabled = true;
 
         if (engineOn)
@@ -44,8 +45,9 @@ public class CarAudio : MonoBehaviour
     {
         if (voiceoverSource == null || voiceoverClip == null) return;
 
-        if (!voiceoverSource.gameObject.activeInHierarchy)
-            voiceoverSource.gameObject.SetActive(true);
+        // THE FIX: If the car is hidden/disabled, do nothing!
+        if (!gameObject.activeInHierarchy || !voiceoverSource.gameObject.activeInHierarchy) return;
+
         voiceoverSource.enabled = true;
 
         if (voiceoverSource.isPlaying) return;
