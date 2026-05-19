@@ -45,6 +45,16 @@ public class CarColorManager : MonoBehaviour
         ApplyColor(wheelRenderers, wheelDefault);
     }
 
+    public void ResetBodyToDefault()
+    {
+        ApplyColor(bodyRenderers, bodyDefault);
+    }
+
+    public void ResetWheelToDefault()
+    {
+        ApplyColor(wheelRenderers, wheelDefault);
+    }
+
     void ApplyColor(Renderer[] renderers, Color c)
     {
         if (renderers == null) return;
@@ -53,7 +63,7 @@ public class CarColorManager : MonoBehaviour
             if (r == null) continue;
             Material m = r.material;
             if (m.HasProperty("_BaseColor")) m.SetColor("_BaseColor", c);
-            if (m.HasProperty("_Color"))     m.SetColor("_Color", c);
+            if (m.HasProperty("_Color")) m.SetColor("_Color", c);
         }
     }
 
@@ -61,7 +71,7 @@ public class CarColorManager : MonoBehaviour
     {
         Material m = r.material;
         if (m.HasProperty("_BaseColor")) return m.GetColor("_BaseColor");
-        if (m.HasProperty("_Color"))     return m.GetColor("_Color");
+        if (m.HasProperty("_Color")) return m.GetColor("_Color");
         return Color.white;
     }
 
