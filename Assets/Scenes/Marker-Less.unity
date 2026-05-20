@@ -441,6 +441,7 @@ GameObject:
   - component: {fileID: 190002859}
   - component: {fileID: 190002860}
   - component: {fileID: 190002861}
+  - component: {fileID: 190002862}
   m_Layer: 0
   m_Name: SpawnObject
   m_TagString: Untagged
@@ -574,6 +575,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SpawnOnce
   spawnTrigger: {fileID: 190002860}
   objectSpawner: {fileID: 190002859}
+--- !u!114 &190002862
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 190002857}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da8b4bef449304ed0a8abb5c3abbfb1c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::VehicleSwitcherAdvanced
+  spawner: {fileID: 190002859}
+  spawnTrigger: {fileID: 190002860}
+  spawnOnce: {fileID: 190002861}
 --- !u!1 &353954638
 GameObject:
   m_ObjectHideFlags: 0
@@ -909,8 +925,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1739301767}
-        m_TargetAssemblyTypeName: VehicleSwitcher, Assembly-CSharp
+      - m_Target: {fileID: 190002862}
+        m_TargetAssemblyTypeName: VehicleSwitcherAdvanced, Assembly-CSharp
         m_MethodName: NextVehicle
         m_Mode: 1
         m_Arguments:
@@ -2775,7 +2791,6 @@ GameObject:
   - component: {fileID: 1739301761}
   - component: {fileID: 1739301765}
   - component: {fileID: 1739301766}
-  - component: {fileID: 1739301767}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -2910,19 +2925,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SceneNavigator
   mainMenuSceneName: mainmenu
---- !u!114 &1739301767
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1739301760}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ce899b342e09c4544ba8dea3e0eaad8b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::VehicleSwitcher
-  spawner: {fileID: 190002859}
 --- !u!1 &1749128541
 GameObject:
   m_ObjectHideFlags: 0

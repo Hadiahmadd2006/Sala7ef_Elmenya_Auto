@@ -552,7 +552,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CarColorManager
   bodyRenderers:
-  - {fileID: 5839407783698361861}
+  - {fileID: 6527751502891098865}
+  - {fileID: 8102103580172681496}
+  - {fileID: 4281778038350533909}
+  - {fileID: 2127383566778795389}
   wheelRenderers:
   - {fileID: 659273545171233961}
   - {fileID: 2079806326018688392}
@@ -586,7 +589,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01a01e811f05e47ed88dfd988c9be82b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Turntable
-  speed: 50
+  speed: 10
 --- !u!54 &3192803055833149395
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1188,6 +1191,16 @@ MeshRenderer:
   m_CorrespondingSourceObject: {fileID: -1880522391648792481, guid: 7a80542d5abad40b99be025260f3dc0f, type: 3}
   m_PrefabInstance: {fileID: 8735855232567694807}
   m_PrefabAsset: {fileID: 0}
+--- !u!23 &2127383566778795389 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -1964130078728793942, guid: 7a80542d5abad40b99be025260f3dc0f, type: 3}
+  m_PrefabInstance: {fileID: 8735855232567694807}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &4281778038350533909 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 4778337329613668546, guid: 7a80542d5abad40b99be025260f3dc0f, type: 3}
+  m_PrefabInstance: {fileID: 8735855232567694807}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &4678916539241521133 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4167280743394806330, guid: 7a80542d5abad40b99be025260f3dc0f, type: 3}
@@ -1220,6 +1233,11 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!23 &6527751502891098865 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -6652725513331149018, guid: 7a80542d5abad40b99be025260f3dc0f, type: 3}
+  m_PrefabInstance: {fileID: 8735855232567694807}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &7515322705951359001 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -7966810418863155762, guid: 7a80542d5abad40b99be025260f3dc0f, type: 3}
@@ -1250,6 +1268,11 @@ Animator:
 --- !u!23 &7674108500216122244 stripped
 MeshRenderer:
   m_CorrespondingSourceObject: {fileID: -7835112123333124525, guid: 7a80542d5abad40b99be025260f3dc0f, type: 3}
+  m_PrefabInstance: {fileID: 8735855232567694807}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &8102103580172681496 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -8553591011728534321, guid: 7a80542d5abad40b99be025260f3dc0f, type: 3}
   m_PrefabInstance: {fileID: 8735855232567694807}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &9129156473884127804 stripped
