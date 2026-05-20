@@ -26,7 +26,6 @@ public class VehicleController : MonoBehaviour
 
     void Awake()
     {
-        // Body: read parent, grab all child renderers
         bodyRenderers = (bodyParent != null)
             ? bodyParent.GetComponentsInChildren<Renderer>(true)
             : new Renderer[0];
@@ -47,7 +46,6 @@ public class VehicleController : MonoBehaviour
         else doorParts = new DoorPart[0];
     }
 
-    // ---------- BODY COLOR ----------
     public void NextBodyColor()
     {
         if (bodyMaterials.Length == 0 || bodyRenderers.Length == 0) return;
@@ -64,7 +62,6 @@ public class VehicleController : MonoBehaviour
             if (r != null) r.material = bodyMaterials[currentBodyIndex];
     }
 
-    // ---------- WHEEL STYLE ----------
     public void NextWheelStyle()
     {
         if (wheelMaterials.Length == 0 || wheelRenderers.Length == 0) return;
@@ -81,7 +78,6 @@ public class VehicleController : MonoBehaviour
             if (r != null) r.material = wheelMaterials[currentWheelIndex];
     }
 
-    // ---------- ENGINE (startup sound only) ----------
     public void ToggleEngine()
     {
         engineOn = !engineOn;
@@ -96,14 +92,12 @@ public class VehicleController : MonoBehaviour
         }
     }
 
-    // ---------- VOICEOVER ----------
     public void PlayVoiceover()
     {
         if (voiceoverSource != null && !voiceoverSource.isPlaying)
             voiceoverSource.Play();
     }
 
-    // ---------- DOORS ----------
     public void OpenAllDoors()
     {
         if (doorParts == null) return;
@@ -111,7 +105,6 @@ public class VehicleController : MonoBehaviour
             if (d != null) d.OnTap();
     }
 
-    // ---------- RESET ----------
     public void ResetVehicle()
     {
         currentBodyIndex = 0;
@@ -123,7 +116,6 @@ public class VehicleController : MonoBehaviour
         Save();
     }
 
-    // ---------- SAVE / LOAD ----------
     void Start()
     {
         currentBodyIndex = PlayerPrefs.GetInt("BodyIdx_" + name, 0);
